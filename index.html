@@ -93,6 +93,18 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .header a {
+      text-decoration: none;
+      color: #007acc;
+      font-size: 14px;
+    }
+
+    .header img {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
   </style>
 </head>
 
@@ -100,7 +112,12 @@
   <div class="header">
     <h1 style="display:inline; font-size: 30px;">백준 한동대 미해결 문제 목록</h1>
     <span style="font-size:0.8em; vertical-align:middle; margin-left:10px;">2025.06.13 기준</span><br>
-    <p>아래 버튼을 클릭해 문제 목록을 확인하세요. <br>헤더 클릭 시 정렬 됩니다.</p>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+      <p style="margin: 0;">아래 버튼을 클릭해 문제 목록을 확인하세요. <br>헤더 클릭 시 정렬 됩니다.</p>
+      <a href="https://github.com/mlmldev34/handong_baekjoon_unsolved" target="_blank">
+        <img src="githubicon.png" alt="GitHub Icon">
+      </a>
+    </div>
   </div>
   <div class="buttons">
     <button onclick="showBronzeTable()">브론즈 문제 보기</button>
